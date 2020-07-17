@@ -67,3 +67,22 @@ description: Track and optimize your sales team in real time
 		<div class="button alt"><a href="#">Get Started Free</a></div>
 	</section>
 </div>
+
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+ var myLandbot = new LandbotPopup({
+   index: 'https://chats.landbot.io/v2/H-640485-K5ZWQVFGK47UDE63/index.html',
+ });
+</script><script>
+ // Show a proactive message on landbot load
+ myLandbot.on('landbot-load', function() {
+   myLandbot.sendProactive({
+ "message": "Hey there!",
+ "author": "Resume Bot",
+ "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
+ "extra": {
+   "hide_textbox": true
+ }
+});
+ });
+</script>
